@@ -1,6 +1,6 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jul 27, 2024 00:00:00").getTime();
-//var countDownDate = new Date("Jun 23, 2024 22:45:30").getTime();
+//var countDownDate = new Date("Jul 27, 2024 00:00:00").getTime();
+var countDownDate = new Date("Jun 23, 2024 22:45:30").getTime();
 
 
 // Update the count down every 1 second
@@ -28,12 +28,18 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
    
+    if(window.innerWidth > 600){
+      document.getElementById("mainBlock").style.height = "50%"
+    }
+    else{
+      document.getElementById("mainBlock").style.height = "35%"
+
+    }
     document.getElementById("time").style.display = "none"
     document.getElementById("log").style.opacity = "1"
     document.getElementById("log").style.height = "auto"
     document.getElementById("log").style.display = "flex"
 
-    document.getElementById("mainBlock").style.height = "50%"
 
   }
 }, 1000);

@@ -100,6 +100,28 @@ body {
     height: 0;
 }
 
+#esqueci{
+    color: rgb(177, 13, 46);
+    cursor: context-menu;
+    font-size: 1.1em;
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0%{
+        color: black;
+
+    }
+    50%{
+        color: rgb(177, 13, 46);
+        transform: scale(1.05);
+    }
+    100%{
+        color: black;
+
+    }
+}
+
 @media (max-width: 600px) {
     .block{
         font-size: 2em;
@@ -112,5 +134,6 @@ body {
 
     .log input{
         padding: 1vh;
+        font-size: 1.2em;
     }
   }

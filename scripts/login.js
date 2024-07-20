@@ -9,6 +9,14 @@ function check() {
     }
 }
 
+function lembrete(){
+    alert('estão na carta bobinha :P');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('button').addEventListener('click', check);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("esqueci").addEventListener('click', lembrete);
 });
