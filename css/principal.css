@@ -7,7 +7,7 @@
 }
 
 body {
-    width: 100%;
+    
     background-image: url(../imgs/benee.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,3 +99,18 @@ body {
     display: none;
     height: 0;
 }
+
+@media (max-width: 600px) {
+    .block{
+        font-size: 2em;
+        margin: 2.5vh;
+    }
+    .mainBlock{
+        width: 80%;
+        height: 20%;
+    }
+
+    .log input{
+        padding: 1vh;
+    }
+  }
